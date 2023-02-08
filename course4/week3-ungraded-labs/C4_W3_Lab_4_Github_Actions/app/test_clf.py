@@ -9,8 +9,8 @@ def test_pipelines_and_scaler():
     assert isPipeline
 
     if isPipeline:
-	firstStep = [v for v in clf.named_steps.values()][0]
-	assert isinstance(firstStep, StandardScaler)
+        firstStep = [v for v in clf.named_steps.values()][0]
+        assert isinstance(firstStep, StandardScaler)
 
 def test_accuracy():
 
